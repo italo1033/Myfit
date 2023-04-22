@@ -23,6 +23,7 @@ CREATE TABLE Aluno (
     idInstrutor INT NOT NULL,
     dtMatriculo DATETIME NOT NULL,
     img VARCHAR(100),
+    idTipoDeTreino INT,
     PRIMARY KEY (id)
 );
 
@@ -59,7 +60,16 @@ CREATE TABLE Inventario(
 );
 
 
-CREATE TABLE 
+CREATE TABLE Exercicio(
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(20) NOT NULL,
+    img VARCHAR(100) NOT NULL,
+    video VARCHAR(255) NOT NULL,
+    PRIMARY KEY(id)
+);
 
-
-
+CREATE TABLE TipoDeTreino(
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(20) NOT NULL,
+    PRIMARY KEY(id)
+);
