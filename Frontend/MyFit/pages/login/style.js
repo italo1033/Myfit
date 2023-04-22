@@ -29,6 +29,16 @@ export default StyleSheet.create({
         justifyContent:"center",
         alignItems:'center'
     },
+    containerInput:{
+        flexDirection:"row",
+        width:'80%',
+        height:50,
+        borderColor:'#000',
+        borderWidth: 1,
+        borderRadius:20,
+        backgroundColor:'#fff',
+        padding:10
+    },
     text:{
         width:'77%', 
     },
